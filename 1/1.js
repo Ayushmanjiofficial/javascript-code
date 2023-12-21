@@ -1,4 +1,4 @@
-// Variables
+// Variables:-
 const accountId = 144553  // not change after declear
 // accountId = 2 // not allowed
 let accountEmail = "hitesh@google.com"
