@@ -39,6 +39,7 @@ const myFunction = function(){ // storing function in variable
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
 //----------------------------***-----------------------------
+// Mamory change in data type:-
 
 // Stack (primitive), Heap (Non-Primitive)
 
