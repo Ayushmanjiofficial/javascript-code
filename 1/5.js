@@ -37,3 +37,33 @@ const myFunction = function(){ // storing function in variable
 // console.log(typeof myFunction); //-> function
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//----------------------------***-----------------------------
+
+// Stack (primitive), Heap (Non-Primitive)
+
+//Stack (primitive):-
+
+let myname = "Ayushman"
+
+let anothername = myname
+anothername = "Sharma"
+
+console.log(anothername);
+console.log(myname);
+
+//--------***--------
+
+//Heap (Non-Primitive):-
+
+let userOne = {
+    email: "ayushman@gmail.com",
+    userId: "123"
+}
+
+let userTwo = userOne
+
+userTwo.userId = "234"
+
+console.log(userOne.email);
+console.log(userTwo.email);
