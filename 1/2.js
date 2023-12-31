@@ -16,7 +16,7 @@ let isLoggedIn = false  //  Boolean
 let state;  // undefined
 
 // number => 2 to power 53
-// bigint
+// Bigint
 // string => ""
 // boolean => true/false
 // null => standalone value

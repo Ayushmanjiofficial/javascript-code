@@ -15,15 +15,15 @@ const gameName = new String('hitesh-hc-com')
 // console.log(gameName.__proto__); //To see the prototypes  //-> {}
 
 // acssasing prototype methodes:-
-// console.log(gameName.length); //-> 13
-// console.log(gameName.toUpperCase());
+// console.log(gameName.length()); //-> 13
+console.log(gameName.toUpperCase());
 console.log(gameName.charAt(2)); //-> t
 console.log(gameName.indexOf('t')); //-> 2
 
 const newString = gameName.substring(0, 4)
 console.log(newString); //-> hite
 
-const anotherString = gameName.slice(-8, 4)
+const anotherString = gameName.slice(-8, 6)
 console.log(anotherString);
 
 const newStringOne = "   hitesh    "
