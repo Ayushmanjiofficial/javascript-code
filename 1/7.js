@@ -1,10 +1,10 @@
 const score = 400
 // console.log(score);
 
-const balance = new Number(100) //spatialy define veriable thpe is number
+const balance = new Number(100) //spatialy define veriable is number
 // console.log(balance); //-> [Number: 100]
 
-// console.log(balance.toString().length); // it convert number to string then check length.  //-> 3
+console.log(balance.toString().length); // it convert number to string then check length.  //-> 3
 // console.log(balance.toFixed(1)); //-> 100.0
 // console.log(balance.toFixed(2)); //-> 100.00
 
