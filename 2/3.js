@@ -16,22 +16,22 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym]) // using as a key symbol.
+console.log(JsUser.email)
+console.log(JsUser["email"])
+console.log(JsUser["full name"])
+console.log(JsUser[mySym]) // using as a key symbol.
 
 JsUser.email = "hitesh@chatgpt.com"
 // Object.freeze(JsUser) // fix the changes and ferther change not applide.
 JsUser.email = "hitesh@microsoft.com"
-// console.log(JsUser);
+// console.log(JsUser); //-> hitesh@chatgpt.com //change not applide becose if 'freeze'
 
 JsUser.greeting = function(){
     console.log("Hello JS user");
 }
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+    console.log(`Hello JS user, ${this.name}`); // this is use to get refers to an object in the current directery.
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greeting()); // Hello JS user
+console.log(JsUser.greetingTwo()); // Hello JS user, Hitesh

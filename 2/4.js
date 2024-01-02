@@ -19,12 +19,13 @@ const regularUser = {
 
 // console.log(regularUser.fullname.userfullname.firstname); //-> hitesh
 
+// Concatinating:-
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
 const obj3 = { obj1, obj2 } //-> { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } } // same problem as array obj. in obj.
-// const obj3 = Object.assign({}, obj1, obj2, obj4)// {} is use to represent target and other are sources.But it is optnal
+// const obj3 = Object.assign({}, obj1, obj2, obj4)// {} is use to represent target and other are sources.But it is optmal
 
 // const obj3 = {...obj1, ...obj2} // combining all key value of obj1 and obj2.
 console.log(obj3);
