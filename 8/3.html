@@ -15,11 +15,11 @@
         console.log(str, Date.now());
     }
 
-    const intervalId = setInterval(sayDate, 1000, "hi") // This "hi" go as refrence in function (str).
+    // const intervalId = setInterval(sayDate, 1000, "hi") // This "hi" go as refrence in function (str).
 
     document.querySelector('#start').addEventListener('click', function(){
         const intervalId = setInterval(sayDate, 1000, "hi")
-        console.log("STOPPED")
+        console.log("Start")
 
         document.querySelector('#stop').addEventListener('click', function(){
         clearInterval(intervalId)
