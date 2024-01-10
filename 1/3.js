@@ -5,8 +5,8 @@ console.log(typeof score);  //-> String
 console.log(typeof(score)); //-> String
 
 let valueInNumber = Number(score)
-//console.log(typeof valueInNumber); //-> Number
-//console.log(valueInNumber); //-> NaN
+console.log(typeof valueInNumber); //-> Number
+console.log(valueInNumber); //-> NaN
 
 // convert to number :-
 // "33" => 33
