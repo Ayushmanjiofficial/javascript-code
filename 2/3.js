@@ -30,7 +30,7 @@ JsUser.greeting = function(){
     console.log("Hello JS user");
 }
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`); // this is use to get refers to an object in the current directery.
+    console.log(`Hello JS user, ${this.name}`); // this is use to get refers to an object in the current directory.
 }
 
 console.log(JsUser.greeting()); // Hello JS user
