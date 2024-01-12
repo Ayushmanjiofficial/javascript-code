@@ -1,5 +1,5 @@
 // Immediately Invoked Function Expressions (IIFE):
-// It is use to created a immediately run function and stop globle variable polution.
+// It is use to created a immediately run function and stop globle variable pollution.
 
 (function chai(){
     // named IIFE

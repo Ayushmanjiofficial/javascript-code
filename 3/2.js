@@ -8,9 +8,9 @@ if (true) {
 }
 
 
-// console.log(a);
-// console.log(b);
-// console.log(c);
+// console.log(a); //-> 300
+// console.log(b); //-> error
+// console.log(c); //-> 300
 
 
 function one(){
