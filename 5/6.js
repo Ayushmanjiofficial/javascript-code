@@ -8,7 +8,7 @@
 
 // console.log(values); //-> undefined // for-each loop do not return any thing.
 
-// So, we use filter for using functunality of for-each and also return fiture.
+// So, we use filter for using functunality of for-each and also return.
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (num) => num > 4 )

@@ -1,3 +1,4 @@
+// forEach Loop:
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach( function (val){
@@ -15,9 +16,9 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach(printMe) //-> js, ruby, java, python, cpp
 
-// coding.forEach( (item, index, arr)=> {
-//     console.log(item, index, arr);
-// } )
+coding.forEach( (item, index, arr)=> {
+    console.log(item, index, arr);
+} )
 
 const myCoding = [
     {

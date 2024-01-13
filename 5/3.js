@@ -6,12 +6,12 @@
 const arr = [1, 2, 3, 4, 5]
 
 for (const num of arr) {
-    //console.log(num);
+    // console.log(num);
 }
 
 const greetings = "Hello world!"
 for (const greet of greetings) {
-    //console.log(`Each char is ${greet}`)
+    // console.log(`Each char is ${greet}`)
 }
 
 // Maps: it give key-value pair with unick key-value and order of key-value is fix.
@@ -32,7 +32,7 @@ console.log(map); //->
 
 // for-of loop work on map also
 for (const [key, value] of map) {
-    // console.log(key, ':-', value);
+    console.log(key, ':-', value);
 } // printing map by destructure it.
 
 const myObject = {
