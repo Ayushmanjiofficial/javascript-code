@@ -23,7 +23,7 @@
     //     alert("owl clicked")
     // } // It give less fetures.
 
-     // attachEvent() // Use on internet explorer
+    // attachEvent() // Use on internet explorer
     // jQuery - on
 
     // type, timestamp, defaultPrevented
@@ -32,8 +32,8 @@
     // altkey, ctrlkey, shiftkey, keyCode
 
 
-    // Event captuering:
-    // type 1 (bubling) -> downt to top ;-
+    
+    // type 1 (bubbling up) -> downt to top ;-
     document.getElementById('images').addEventListener('click', function(e){
         console.log("clicked inside the ul");
     }, false)
@@ -45,7 +45,7 @@
     //-> owl clicked
     //   clicked inside the ul
 
-    // type 2 (bubling) -> top to down ;-
+    // type 2 (Event captuering) -> top to down ;-
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, true)
