@@ -20,7 +20,7 @@
     addLanguage("python")
     addLanguage("typescript")
     // or
-    function addOptiLanguage(langName){ //optimise way
+    function addOptiLanguage(langName){ //optimize way
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName))
         document.querySelector('.language').appendChild(li)
@@ -38,7 +38,8 @@
     //edit
     const firstLang = document.querySelector("li:first-child")
     firstLang.outerHTML = '<li>TypeScript</li>'
-
+    // It replaces the entire HTML content of the first <li> with the specified HTML string '<li>TypeScript</li>'
+    
     //remove
     const lastLang = document.querySelector('li:last-child')
     lastLang.remove()
