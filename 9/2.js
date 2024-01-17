@@ -3,18 +3,18 @@ const promiseOne = new Promise(function(resolve, reject){
     // DB calls, cryptography, network
     setTimeout(function(){
         console.log('Async task is compelete');
-        resolve() // call
+        resolve() // connect with 'then'.
     }, 1000)
 })
 
-// then -> resolve
-
+// 'then' have direct relation with resolve.
 promiseOne.then(function(){
     console.log("Promise consumed");
 })
 //-> Async task is compelete
 //   Promise consumed
 
+// OR......
 
 new Promise(function(resolve, reject){
     setTimeout(function(){
@@ -28,7 +28,7 @@ new Promise(function(resolve, reject){
 //-> Async task 2
 //   Async 2 resolved
 
-
+// Giving argumantes:
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
         resolve({username: "Chai", email: "chai@example.com"})
@@ -56,7 +56,7 @@ promiseFour.then((user) => {
     console.log(user);
     return user.username
 }).then((username) => {
-    console.log(username);
+    console.log(username); // further channing for only username.
 }).catch(function(error){
     console.log(error);
 }).finally(() => console.log("The promise is either resolved or rejected"))
@@ -84,8 +84,8 @@ async function consumePromiseFive(){
 }
 consumePromiseFive()
 
-
-
+// Fatching:-
+// By async-await:
 // async function getAllUsers(){
 //     try {
 //         const response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -101,6 +101,7 @@ consumePromiseFive()
 
 // or
 
+// By then-catch:
 fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
     return response.json()
