@@ -21,10 +21,11 @@
     xhr.open('GET', requestUrl)
     // console.log(xhr.readyState); // This only give current state. 
     //-> 2
-    xhr.onreadystatechange = function(){
+    xhr.onreadystatechange = function(){ // This call in all state, when state change.
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
-            const data = JSON.parse(this.responseText) // "JSON.parse" convert string to json code.
+            // const data = this.responseText // The response mostly come in string format.
+            const data = JSON.parse(this.responseText) // "JSON.parse" convert string to json(obj.).
             console.log(data);
             console.log(typeof data);
             console.log(data.followers);
